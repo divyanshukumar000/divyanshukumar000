@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="fit.css">
+    <style>
+      .navbar{
+        justify-content: space-between;
+        text-align: center;
+        height:auto;
+      }
+      .navbar .right ul li{
+        display:inline-block;
+        margin-left:24px;
+      }
+      .navbar .right ul li a{
+        text-decoration: none;
+        font-size:20px;
+        color:black;
+      }
+      .navbar span{
+        font-size:28px;
+        font-style: italic;
+        font-weight:500;
+      }
+      .navbar .right i{
+        font-size:20px;
+        margin-left:20px;
+      }
+    
+/* Back Section (Hero) */
+.back {
+  background-image: url("https://p.w3layouts.com/demos_new/template_demo/12-09-2020/prowess-lift-liberty-demo_Free/1637155844/web/assets/images/banner.jpg");
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+}
+
+/* Left Text */
+.section h3 {
+  color: #fff;
+  font-size: 46px;
+  font-weight: bold;
+}
+.section p {
+  color: #353434;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.section button {
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+/* Card */
+.section .card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+.section .card h5 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section .card input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.section .card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  background: aqua;
+  color: #fff;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .back {
+    padding: 40px 15px;
+    text-align: center;
+  }
+  .section h3 {
+    font-size: 32px;
+  }
+  .section p {
+    font-size: 16px;
+  }
+  .section .card {
+    margin-top: 30px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .section h3 {
+    font-size: 26px;
+  }
+}
+@media(max-width:576px){
+  .section-1 .card{
+    width:auto;
+    height:350px;
+  }
+}
+@media(max-width:576px){
+  .section-1{
+    height: auto;
+  }
+}
+.section-1{
+  background-color:#f8f9fa;
+  padding:60px 0;
+}
+.section-1 .card{
+  height: 350px;;
+  border-radius:10px;
+  text-align: center;
+  align-items: center;
+}
+.section-1 .card:hover{
+  box-shadow:0px 6px 20px rgba(0,0,0,0.6);
+  background-color:#011627;
+  color:white;
+  transition:1.5s;
+  transform: scale(1.05);
+}
+.section-1 span{
+margin:30px;
+background-color: aqua;
+font-size: 26px;
+width:65px;
+height:65px;
+line-height:65px;
+color:white;
+border-radius:50%;
+text-align:center;
+}
+.section-1 p{
+margin-top:10px;
+font-weight:400;
+font-size:20px;
+}
+.section-2{
+    background-color:white;
+    padding: 80px 0; 
+    width:100%;
+}
+.section-2 img{
+    max-width: 100%;   /* responsive */
+    height:500px;      /* height auto adjust hogi */
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    border-radius:20px;
+}
+.section-2 h3{
+    font-size:36px;
+    font-weight: bold;
+}
+.section-2 button{
+    color:white;
+     height:30px;
+    width:100px;
+    padding: 12px 35px;
+    box-sizing: content-box;
+    background-color:#2ec4b6;
+    border-radius:10px;
+    margin-top:30px;
+    border-color:#2ec4b6;
+
+}
+@media (max-width: 992px) {
+  .section-2 {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .section-2 h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .section-2 p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .section-2 button {
+    display: block;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 576px) {
+  .section-2 {
+    padding: 40px 15px;  
+  }
+  .section-2 h3 {
+    font-size: 24px;
+  }
+  .section-2 p {
+    font-size: 15px;
+  }
+  .section-2 img{
+    width:100%;
+    height:400px;
+  }
+}
+@media(max-width:772px){
+  .section-3{
+    height:auto;
+  }
+}
+.section-3 {
+  background-color: #f8f9fa;
+  padding: 80px 20px;   
+  text-align: center;
+}
+.section-3 h6{
+    text-align: center; 
+    padding-top:100px;
+}
+.section-3 h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.section-3 h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.section-3 p{
+    font-size:60px;
+    font-weight:bold;
+    text-align: center;
+    margin-top:30px;
+}
+@media (max-width: 992px) {
+  .section-3 h3 {
+    font-size: 28px;
+  }
+  .section-3 p {
+    font-size: 36px;
+  }
+  .section-3 h4 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .section-3 {
+    padding: 40px 15px;
+  }
+  .section-3 h3 {
+    font-size: 22px;
+  }
+  .section-3 p {
+    font-size: 28px;
+  }
+  .section-3 h4 {
+    font-size: 15px;
+  }
+}
+.section-4 {
+  padding: 80px 20px;
+}
+.section-4 h3{
+    font-size:36px;
+    font-weight:bold;
+    line-height: 1.4;
+}
+.section-4 p{
+    font-size:18px;
+    line-height: 1.6;
+}
+.section-4 h6{
+    font-weight:bold;
+    font-size:18px;
+}
+.section-4 img {
+  max-width: 100%;
+  height: auto;
+  max-height:500px;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+}
+.section-4 .progress-bar {
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.section-4 .progress-container {
+  height: 8px;
+  background-color: #2ec4b6;
+}
+@media (max-width: 992px) {
+  .section-4 h3 { font-size: 28px; text-align: center; }
+  .section-4 p { font-size: 16px; text-align: center; }
+  .section-4 h6 { font-size: 16px; }
+  .section-4 { text-align: center; }
+  .section-4 img { margin-top: 30px; }
+}
+.section-5 {
+  background-image: url("Asset/back.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 120px 20px;  /* height fix ki jagah padding */
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+}
+.section-5 h3 {
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-5 p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.section-5 button {
+  padding: 12px 35px;
+  margin: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.section-5 button:first-of-type {
+  background-color: white;
+  color: aqua;
+}
+
+.section-5 button:last-of-type {
+  background-color: aqua;
+  color: white;
+}
+@media (max-width: 992px) {
+  .section-5 h3 {
+    font-size: 32px;
+  }
+  .section-5 p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .section-5 {
+    padding: 80px 15px;
+  }
+  .section-5 h3 {
+    font-size: 24px;
+  }
+  .section-5 p {
+    font-size: 14px;
+  }
+  .section-5 button {
+    display: block;
+    width: 80%;
+    max-width: 450px;
+    margin: 10px auto;
+  }
+}
+.section-6 {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.section-6 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.section-6 h6 {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.section-6 a {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: black;
+  text-decoration: none;
+}
+
+.section-6 a:hover {
+  color: #2ec4b6;
+}
+
+.section-6 p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+@media (max-width: 992px) {
+  .section-6 h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .section-6 p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .section-6 {
+    text-align: center;
+  }
+  .section-6 a {
+    font-size: 18px;
+  }
+  .section-6 p {
+    font-size: 14px;
+  }
+}
+.section-last {
+  background-color: #011627;
+  padding:18px;
+  color: #fff;
+}
+
+.section-last h6 {
+  font-size: 20px;
+  /* margin-bottom: 15px; */
+}
+
+.section-last li {
+  color: #7f8a94;
+  list-style: none;
+  font-size:12px;
+  margin-bottom: 8px;
+}
+
+.section-last a {
+  color: #7f8a94;
+  text-decoration: none;
+}
+
+.section-last button {
+  color: white;
+  padding: 12px 35px;
+  margin-top: 20px;
+  background-color: aqua;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.section-last input {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  margin-top: 10px;
+}
+@media (max-width: 992px) {
+  .section-last h6 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .section-last {
+    padding:auto;
+    text-align: center;
+  }
+  .section-last .col-3 {
+    margin-bottom: 30px;
+  }
+  .section-last input {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .section-last button {
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar container">
+    <div class="left">
+      <span>Fitness Site</span>
+    </div>
+    <div class="right d-lg-block d-none">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Pages</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+        <i class="fa-solid fa-dumbbell"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </ul>
+    </div>
+    <div class="menu d-lg-none d-md-block">
+    <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <!-- Starting section -->
+  <div class="back">
+  <div class="section container">
+      <div class="row align-items-center">
+        
+        <!-- Left Text -->
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <h3>Workout videos for every fitness level Absolutely free.</h3>
+          <p>Earn your workout complete</p>
+          <button class="btn btn-light me-2">Get Started</button>
+          <button class="btn btn-info text-white">Read More</button>
+        </div>
+        
+        <!-- Right Card -->
+        <div class="col-lg-5 col-md-12 offset-lg-1">
+          <div class="card">
+            <h5>Work out at home for free.</h5>
+            <input type="text" class="form-control mb-3" placeholder="User Name">
+            <input type="email" class="form-control mb-3" placeholder="User Email">
+            <input type="password" class="form-control mb-3" placeholder="User Password">
+            <p class="text-center">I Accept <a href="#">term & condition</a></p>
+            <button class="btn btn-info w-100 text-white fw-bold">Join Now</button>
+          </div>
+        </div>
+
+      </div>
+  </div>
+  </div>
+
+  <!-- Section-1 card -->
+        <div class="section-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card p-4 mt-5">
+                <h3 style="margin-left:20px;">Workout Videos</h3>
+                <span class="fa-solid fa-video"></span>
+                <p>Access to hundreds of free <br> workout videos.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card p-4 mt-5">
+                <h3 style="margin-left:20px;">Workout Programs</h3>
+                <span class="fa fa-tasks"></span>
+                <p>Affordable and effective<br>workout programs.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card p-4 mt-5">
+                <h3 style="margin-top:20px; margin-left:20px;">Meal Plans</h3>
+                <span class="fa-solid fa-pen-to-square"></span>
+                <p>Plans built with registered<br>nutritionists.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+              <div class="card p-4 mt-5">
+                <h3 style="margin-top:20px; margin-left:20px;">Free Membership</h3>
+                <span class="fa fa-users"></span>
+                <p>Add powerful features to<br>your membership.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+  <!-- Section-2 -->
+      <div class="section-2">
+        <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 mt-4">
+            <img src="Asset/pose.jpg" alt="" class="section2-img">
+          </div>
+          <div class="col-lg-6 col-md-12 mt-5">
+            <h3>Get more with low-cost <br> training programs and <br>advanced features.</h3>
+            <p style="margin-top:20px; font-size:20px;">“The hard days are the best because that’s when champions are made, so if you push through, you can push through anything; You’re going to have to let it hurt. Let it suck. The harder you work, the better you will look. Your appearance isn’t parallel to how heavy you lift, it’s parallel to how hard you work” </p>
+            <button>Read More</button>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+  <!-- Section-3 -->
+      <div class="section-3">
+        <h6>About Prowess Lift</h6>
+        <h3>Everything about Success</h3>
+        <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <p>35+</p>
+            <h4>35+ million workout Programs completed each month by our amazing Prowess Lift Family.</h4>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <p>500+</p>
+            <h4>500+ free workout videos for every fitness level + effective & affordable workout programs.</h4>
+          </div>
+          <div class="col-lg-4 col-md-6  mx-auto">
+            <p>26+</p>
+            <h4>26+ years of combined experience helping people achieve their fitness & health goals.</h4>
+          </div>
+        </div>
+      </div>
+      </div>
+
+  <!-- Section-4 -->
+      <div class="section-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12">
+              <h3>Once you can control your mind, you can control your body.</h3>
+              <p>“When I feel tired, I just think about how great I will feel once I finally reach my goal, You have to think about it before you can do it.”</p>
+              <h6>Immune</h6>
+              <div class="progress-bar" style="height: 8px; background-color: gray; width: 100%; border-radius: 10px;">
+                <div class="progress-container" style="height: 5vh; background-color: red; width: 80%;">
+
+                </div>
+              </div>
+              <h6>Heart & Energy</h6>
+              <div class="progress-bar" style="height: 8px; background-color: gray; width: 100%; border-radius: 10px;">
+                <div class="progress-container" style="height: 5vh; background-color: red; width: 95%;">
+
+                </div>
+              </div>
+              <h6>Joints & bones</h6>
+              <div class="progress-bar" style="height: 8px; background-color: gray; width: 100%; border-radius: 10px;">
+                <div class="progress-container" style="height: 5vh; background-color: red; width: 50%;">
+
+                </div>
+              </div>
+              <h6>Skin</h6>
+              <div class="progress-bar" style="height: 8px; background-color: gray; width: 100%; border-radius: 10px;">
+                <div class="progress-container" style="height: 5vh; background-color: red; width: 50%;">
+                </div>
+              </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-12">
+                <img src="Asset/ab.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+  <!-- Section-5 -->
+        <div class="section-5 text-center">
+          <h3>Everything you want is outside of your comfort zone.</h3>
+          <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit.</p>
+          <button>Get Started</button>
+          <button style="color:white; background-color: aqua;">Contact us</button>
+        </div>
+
+  <!-- Section-6 -->
+        <div class="section-6">
+          <h6 style="text-align: center;">Blog posts</h6>
+          <h3 style="text-align: center;">Take Charge Of Your Life</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-12">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/12-09-2020/prowess-lift-liberty-demo_Free/1637155844/web/assets/images/ab5.jpg" alt="">
+                <h6>Aug 28, 2024.</h6>
+                <a href="">One-Hour Workout </a>
+                <p>A one-hour workout offers a multitude of benefits, including improved physical and mental health, enhanced cardiovascular fitness, and weight management</p>
+                <a href=""style="font-size:20px;">Read more-></a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/12-09-2020/prowess-lift-liberty-demo_Free/1637155844/web/assets/images/ab3.jpg" alt="">
+                <h6>Aug 28, 2024.</h6>
+                <a href="">More Discipline.</a>
+                <p>Set realistic goals, create a structured schedule, find activities you enjoy, and practice self-discipline in other areas of life, like sleep and nutrition.</p>
+                <a href="" style="font-size:20px;">Read more-></a>
+              </div>
+              <div class="col-lg-4 col-md-6 col-12 mx-auto mt-2">
+                <img src="https://p.w3layouts.com/demos_new/template_demo/12-09-2020/prowess-lift-liberty-demo_Free/1637155844/web/assets/images/ab2.jpg" alt="">
+                <h6>Aug 28, 2024.</h6>
+                <a href="">Consistent workout</a>
+                <p>Regularly engaging in physical activity, typically aiming for at least 3-5 times per week; This regularity is crucial for making progress towards fitness goals. </p>
+                <a href="" style="font-size:20px;">Read more-></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- Section-7 -->
+        <div class="section-8" style="margin-top:100px;">
+           <div class="container " style="margin-top:100px;">
+            <div class="row justify-content-center">
+          <h6 style="text-align: center;">Testimonials</h6>
+          <h3 style="text-align: center; font-size:36px; font-weight:bold;">What our Clients say</h3>
+          <img src="Asset/bca.jpg" alt="" style="width: 100px;height: 100px;border-radius:50%;">
+          <p style="text-align: center;">Regular exercise offers numerous physical and mental health benefits. It strengthens the heart, improves circulation,<br> and helps maintain a healthy weight.Additionally, exercise can improve mood, reduce stress,boost energy levels, and  <br>promote better sleep.It also plays a role in reducing the risk of chronic diseases and improving cognitive function. </p>
+          <h3 style="text-align: center; font-size:16px;">Divyanshu Kumar</h3>
+        </div>
+        </div>
+        </div>
+
+  <!-- Section last -->
+        <div class="section-last mt-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-6 mt-5">
+                <h4 style="color:white;">Prowess Lift</h4>
+                <p style="color:#7f8a94;">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.</p>
+                <li>6207742806</li>
+                <a href="mail" style="color:#7f8a94;margin-top:10px;">divyanshuseth071@gmail.com</a>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6 mt-5">
+                <h6>Usefull Links</h6>
+                <ul>
+                  <li>About us</li>
+                  <li>Blog Posts</li>
+                  <li>Pricing plans</li>
+                  <li>Carrers</li>
+                  <li>Classes</li>
+                  <li>Contact us</li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6 mt-5">
+                <h6>Healthy Living</h6>
+                  <ul>
+                   <li> Fitness</li>
+                    <li>Health</li>
+                    <li>Before & After</li>
+                    <li>Weight Loss</li>
+                    <li>Healthy Recipes</li>
+                    <li>Meal Plans</li>
+                    <li>Workout Videos</li>
+                    <li>Support</li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-3 col-6 mt-5">
+                <h6>Subscribe to our Newsletter</h6>
+                <p style="color:#7f8a94;">Enter your email and receive the latest news, updates and special offers from us.</p>
+                <button>Subscribe Now</button>
+              </div>
+            </div>
+            <h6 style="text-align: center; font-size:14px;">Design by Divyanshu</h6>
+          </div>
+        </div>
+
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+  // Section 2
+  const img2 = document.querySelector(".section2-img");
+  img2.style.opacity = "0";
+  img2.style.transform = "translateX(-200px)";
+  img2.style.transition = "all 1s ease";
+
+  const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        img2.style.opacity = "1";
+        img2.style.transform = "translateX(0)";
+      } else {
+        img2.style.opacity = "0";
+        img2.style.transform = "translateX(-200px)";
+      }
+    });
+  }, { threshold: 0.2 });
+  observer2.observe(img2);
+
+  // Section 4
+  const img4 = document.querySelector(".section-4 img");
+  img4.style.opacity = "0";
+  img4.style.transform = "scale(0.7) rotate(-10deg)";
+  img4.style.transition = "all 1s ease";
+
+  const observer4 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        img4.style.opacity = "1";
+        img4.style.transform = "scale(1) rotate(0deg)";
+      } else {
+        img4.style.opacity = "0";
+        img4.style.transform = "scale(0.7) rotate(-10deg)";
+      }
+    });
+  }, { threshold: 0.2 });
+  observer4.observe(img4);
+});
+
+
+</script>
+
+</body>
+</html>
